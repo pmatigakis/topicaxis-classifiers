@@ -1,0 +1,12 @@
+service: "classifiers:svc"
+labels:
+   owner: topicaxis
+   stage: production
+include:
+- "classifiers.py"
+python:
+   packages:
+   - scikit-learn==1.2.2
+   - torch==2.0.1
+   - transformers[torch]==4.33.3
+   - tensorflow==2.15.0
